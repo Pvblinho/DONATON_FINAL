@@ -13,7 +13,6 @@ import com.donaton.msLogistica.model.Transporte;
 import com.donaton.msLogistica.service.TransporteService;
 
 
-
 @RestController
 @RequestMapping("/api/v1/transportes")
 public class TransporteController {

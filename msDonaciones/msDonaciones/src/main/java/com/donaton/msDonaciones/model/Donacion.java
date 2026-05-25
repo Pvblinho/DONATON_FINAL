@@ -23,6 +23,7 @@ public class Donacion {
     private Long id;
     private String nombre;
     private String descripcion;
+    private Integer cantidad;
     @ManyToOne
     private Categoria categoria;
     @ManyToOne
