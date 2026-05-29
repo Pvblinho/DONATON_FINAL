@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 @RequestMapping("/api/v1/centros-de-acopio")
 public class CentroDeAcopioController {
     
-    private CentroDeAcopioService centroDeAcopioService;
+    private final CentroDeAcopioService centroDeAcopioService;
 
     public CentroDeAcopioController(CentroDeAcopioService centroDeAcopioService) {
         this.centroDeAcopioService = centroDeAcopioService;

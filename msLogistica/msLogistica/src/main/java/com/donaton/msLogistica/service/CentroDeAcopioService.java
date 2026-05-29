@@ -10,7 +10,7 @@ import com.donaton.msLogistica.repository.CentroDeAcopioRepository;
 @Service
 public class CentroDeAcopioService {
 
-   private CentroDeAcopioRepository centroDeAcopioRepository;
+   private final CentroDeAcopioRepository centroDeAcopioRepository;
 
    public CentroDeAcopioService(CentroDeAcopioRepository centroDeAcopioRepository) {
        this.centroDeAcopioRepository = centroDeAcopioRepository;

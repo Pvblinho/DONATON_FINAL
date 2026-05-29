@@ -18,7 +18,7 @@ import com.donaton.msLogistica.service.EnvioService;
 @RequestMapping("/api/v1/envios")
 public class EnvioController {
     
-    private EnvioService envioService;
+    private final EnvioService envioService;
 
     public EnvioController(EnvioService envioService) {
         this.envioService = envioService;

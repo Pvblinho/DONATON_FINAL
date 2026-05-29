@@ -10,7 +10,7 @@ import com.donaton.msLogistica.repository.InventarioRepository;
 @Service
 public class InventarioService {
 
-   private InventarioRepository inventarioRepository;
+   private final InventarioRepository inventarioRepository;
 
    public InventarioService(InventarioRepository inventarioRepository) {
        this.inventarioRepository = inventarioRepository;

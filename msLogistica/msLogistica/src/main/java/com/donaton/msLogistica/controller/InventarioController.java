@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 @RequestMapping("/api/v1/inventarios")
 public class InventarioController {
     
-    private InventarioService inventarioService;
+    private final InventarioService inventarioService;
 
     public InventarioController(InventarioService inventarioService) {
         this.inventarioService = inventarioService;

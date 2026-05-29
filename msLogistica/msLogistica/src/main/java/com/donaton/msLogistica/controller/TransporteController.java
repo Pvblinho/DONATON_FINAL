@@ -17,7 +17,7 @@ import com.donaton.msLogistica.service.TransporteService;
 @RequestMapping("/api/v1/transportes")
 public class TransporteController {
     
-    private TransporteService transporteService;
+    private final TransporteService transporteService;
 
     public TransporteController(TransporteService transporteService) {
         this.transporteService = transporteService;

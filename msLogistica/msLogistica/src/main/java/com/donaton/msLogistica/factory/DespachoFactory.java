@@ -1,6 +1,5 @@
 package com.donaton.msLogistica.factory;
 
-import com.donaton.msLogistica.dto.DespachoRequestDTO;
 import com.donaton.msLogistica.model.CentroDeAcopio;
 import com.donaton.msLogistica.model.Despacho;
 import com.donaton.msLogistica.model.Necesidad;
@@ -20,7 +19,7 @@ public class DespachoFactory {
         nuevoDespacho.setTransporte(vehiculo);
         nuevoDespacho.setNecesidad(necesidad);
         
-        // Reglas de negocio automáticas: 
+        // Reglas de negocio automáticas:
         // El frontend no manda la fecha ni el estado, el sistema lo asigna solo.
         nuevoDespacho.setFechaSalida(LocalDateTime.now());
         nuevoDespacho.setEstado("EN_PREPARACION");

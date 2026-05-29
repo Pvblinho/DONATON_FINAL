@@ -17,21 +17,14 @@ public class Despacho {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private LocalDateTime fechaSalida;
-    private String estado; // Ej: "EN_PREPARACION", "EN_RUTA", "ENTREGADO"
-
-    // ¿De dónde sale la ayuda?
+    private String estado;
     @ManyToOne
     @JoinColumn(name = "centro_origen_id")
     private CentroDeAcopio centroOrigen;
-
-    // ¿En qué vehículo va?
     @ManyToOne
     @JoinColumn(name = "transporte_id")
     private Transporte transporte;
-
-    // ¿A qué necesidad específica va a cubrir?
     @ManyToOne
     @JoinColumn(name = "necesidad_destino_id")
     private Necesidad necesidad;
