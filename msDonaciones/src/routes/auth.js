@@ -37,7 +37,4 @@ router.post('/login', (req, res) => {
     res.json({ token, message: 'Login exitoso' });
 });
 
-// LO
-
-
 module.exports = router;
