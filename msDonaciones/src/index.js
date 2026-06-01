@@ -11,8 +11,8 @@ app.use('/users', require('./routes/users.js'));
 
 
 app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).json({ error: 'Error interno del servidor' });
+    console.error(err.stack);
+    res.status(500).json({ error: 'Error interno del servidor' });
 });
 
 const PORT = process.env.PORT || 3000;
