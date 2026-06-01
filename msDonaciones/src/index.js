@@ -7,7 +7,9 @@ const app = express();
 app.use(express.json());
 
 app.use('/auth', require('./routes/auth'));
-app.use('/users', require('./routes/users.js'));
+app.use('/users', require('./routes/usersRoutes.js'));
+app.use('/donaciones', require('./routes/donacionesRoutes.js'));
+app.use('/categorias', require('./routes/categoriasRoutes.js'));
 
 
 app.use((err, req, res, next) => {
